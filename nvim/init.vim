@@ -50,7 +50,6 @@ set softtabstop=4
 set shiftwidth=4
 " Better display for messages
 set cmdheight=2
-set timeoutlen=50
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c 
@@ -81,8 +80,8 @@ nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 
-nmap <silent> [c <cmd>NextDiagnosticCycle
-nmap <silent> ]c <cmd>PrevDiagnosticCycle
+nmap <silent> [c <cmd>NextDiagnosticCycle<CR>
+nmap <silent> ]c <cmd>PrevDiagnosticCycle<CR>
 
 let g:lightline = {
 			\ 'active': {
